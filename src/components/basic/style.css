@@ -1,0 +1,114 @@
+.main-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ 
+
+}
+
+.title{
+  font-family: sans-serif;
+  text-align: center;
+}
+
+
+.card {
+  
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: transform 0.2s;
+  aspect-ratio: 1 / 1; /* Maintain a 1:1 aspect ratio */
+  width: 400px;
+}
+
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-header {
+  background-color: #f0f0f0;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-number {
+  font-weight: bold;
+}
+
+.card-category {
+  color: #666;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-description {
+  color: #444;
+}
+
+
+.food-item-image {
+  max-width: 100%; /* Ensure the image doesn't exceed the card width */
+  height: auto; /* Maintain the image's aspect ratio */
+  border-radius: 10px; /* Add rounded corners for a nice effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  object-fit: cover; /* Ensure the image covers the container */
+  object-position: center center; /* Center the image within the container */
+}
+
+
+
+.card-footer {
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; /* Background color for the navbar */
+  padding: 10px; /* Add some padding to the navbar */
+}
+
+.nav-button {
+  margin: 9px;
+  padding: 11px 24px; /* Increase padding for a more substantial feel */
+  background-color: #ff6f61; /* A warm, inviting color */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 8px; /* Slightly rounded corners for a softer look */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition effect */
+  font-size: 16px; /* Slightly larger font size for better readability */
+}
+
+.nav-button:hover {
+  background-color: #ff543e; /* Darker shade on hover for an interactive feel */
+}
+
+@media (max-width: 768px) {
+  .nav-button {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust button width for mobile screens */
+    margin: 0 10px; /* Adjust margin to separate buttons horizontally */
+  }
+}
+
+
